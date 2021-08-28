@@ -1,13 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
-import * as aboutStyles from "../examples/about.module.css"
 
-export default function about() {
+const About = () => {
   return (
     <Layout>
-      <div className={aboutStyles.page}>
-        <h1>about page</h1>
-      </div>
+      <h1>about page</h1>
     </Layout>
   )
 }
+
+export default About
