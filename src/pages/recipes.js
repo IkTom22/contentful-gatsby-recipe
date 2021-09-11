@@ -1,10 +1,13 @@
-import React from "react"
-import Layout from "../components/Layout"
+import React from 'react'
+import Layout from '../components/Layout'
+import AllRecepies from '../components/AllRecepies'
 
 const Recipes = () => {
   return (
     <Layout>
-      <h1>recipes page</h1>
+      <main className="page">
+        <AllRecepies />
+      </main>
     </Layout>
   )
 }
