@@ -2,7 +2,8 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link, graphql } from 'gatsby'
-import RecepiesList from '../components/RecepiesList'
+import RecipesList from '../components/RecipesList'
+import SEO from '../components/SEO'
 
 const About = ({
   data: {
@@ -11,6 +12,7 @@ const About = ({
 }) => {
   return (
     <Layout>
+      <SEO title="About" />
       <main className="page">
         <section className="about-page">
           <article>
@@ -37,7 +39,7 @@ const About = ({
         </section>
         <section className="fearured-recipes">
           <h5>Look at this Awesomesource!</h5>
-          <RecepiesList recipes={recepis} />
+          <RecipesList recipes={recepis} />
         </section>
       </main>
       <h1>About page</h1>

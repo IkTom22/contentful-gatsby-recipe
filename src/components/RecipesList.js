@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import slugify from 'slugify'
 
-const RecepiesList = ({ recipes = [] }) => {
+const RecipesList = ({ recipes = [] }) => {
   return (
     <div className="recipes-list">
       {recipes.map(recipe => {
@@ -28,4 +28,4 @@ const RecepiesList = ({ recipes = [] }) => {
   )
 }
 
-export default RecepiesList
+export default RecipesList
